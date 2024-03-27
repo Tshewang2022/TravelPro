@@ -12,7 +12,10 @@ import {
   destination4,
   destination5,
 } from "../assets/images";
-export const footerlinks = [
+import { post1, post2 } from "../assets/images";
+import { getstart1, getstart2, getstart3 } from "../assets/images";
+import { tour1, tour2, tour3, tour4, tour5, tour6 } from "../assets/images";
+export const navlinks = [
   {
     title: "Home",
     route: "/",
@@ -151,21 +154,21 @@ export const destinations = [
 
 export const getStarted = [
   {
-    imgURL: "",
+    imgURL: getstart1,
     no: 1,
     title: "Get Travel Insurence",
     description:
       "We provide a range of digital marketing lutions including website design.",
   },
   {
-    imgURL: "",
+    imgURL: getstart2,
     no: 2,
     title: "Compare & Book",
     description:
       "We provide a range of digital marketing lutions including website design.",
   },
   {
-    imgURL: "",
+    imgURL: getstart3,
     no: 3,
     title: "Book a Room",
     description:
@@ -175,7 +178,7 @@ export const getStarted = [
 
 export const deals = [
   {
-    imgURL: "",
+    imgURL: post1,
     profileImg: "",
     name: "By Admin",
     title: "Useful VS Code Esion Front-End Development",
@@ -183,11 +186,104 @@ export const deals = [
       "Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id vim rrem princi pes suas molesti interpretaris",
   },
   {
-    imgURL: "",
+    imgURL: post2,
     profileImg: "",
     name: "By Admin",
     title: "Useful VS Code Esion Front-End Development",
     description:
       "Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id vim rrem princi pes suas molesti interpretaris",
+  },
+];
+
+export const footerlinks = [
+  {
+    title: "Useful Links",
+    routes1: [
+      { link: "Home" },
+      { link: "Flights" },
+      { link: "Hotels" },
+      { link: "Transfer" },
+    ],
+    routes2: [
+      { link: "Activites" },
+      { link: "Organized Trips" },
+      { link: "Booking" },
+      { link: "Request" },
+    ],
+  },
+  {
+    title: "Contact Info",
+    routes1: [
+      { link: "Emirates, United Arabian" },
+      { link: "New York City, USA" },
+      { link: "One Bridge, Belguim" },
+      { link: "Golden Frame, Dubai" },
+    ],
+    routes2: [
+      { link: "Emirates, United Arabian" },
+      { link: "New York City, USA" },
+      { link: "One Bridge, Belguim" },
+      { link: "Golden Frame, Dubai" },
+    ],
+  },
+];
+
+export const teamMembers = [
+  {
+    imgURL: "",
+    name: "David Cooper",
+    designations: "CO FOUNDER",
+    icons_img: [{ icon1: "" }, { icon2: "" }, { icon3: "" }, { icon4: "" }],
+  },
+  {
+    imgURL: "",
+    name: "David Cooper",
+    designations: "CO FOUNDER",
+    icons_img: [{ icon1: "" }, { icon2: "" }, { icon3: "" }, { icon4: "" }],
+  },
+];
+
+export const tours = [
+  {
+    imgURL: tour1,
+    days: "3 Day 2 Night",
+    title: "Beauty of Solomon Island",
+    locations: "Africa Portugal Mexico",
+    price: "$4000",
+  },
+  {
+    imgURL: tour2,
+    days: "3 Day 2 Night",
+    title: "Believe In Your Mexico",
+    locations: "Paris, France",
+    price: "$5000",
+  },
+  {
+    imgURL: tour3,
+    days: "3 Day 2 Night",
+    title: "Proof That Bahamas Beauty",
+    locations: "Rome, Italy",
+    price: "$3500",
+  },
+  {
+    imgURL: tour4,
+    days: "3 Day 2 Night",
+    title: "Famous fot its skyscrapers",
+    locations: "New York City, USA",
+    price: "$4000",
+  },
+  {
+    imgURL: tour5,
+    days: "3 Day 2 Night",
+    title: "An acient Incan city",
+    locations: "Machu Picchu, Peru",
+    price: "$5500",
+  },
+  {
+    imgURL: tour6,
+    days: "3 Day 2 Night",
+    title: "Famous for its whitewashed",
+    locations: "Santorini, Greece",
+    price: "$4500",
   },
 ];
