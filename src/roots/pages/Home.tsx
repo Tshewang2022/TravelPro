@@ -21,7 +21,7 @@ const Home = () => {
               <p>Guest</p>
               <MdKeyboardArrowDown className="w-[24px] h-[24px]" />
             </div>
-            <div className="bg-blue-200 ">Find Now</div>
+            <div className="bg-blue-200 ">Finds Now</div>
           </div>
         </div>
       </div>
