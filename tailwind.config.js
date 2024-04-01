@@ -7,6 +7,9 @@ export default {
         lightBlue: "#4dd0d4",
         darkBlue: "#102039",
       },
+      fontFamily: {
+        roboto: "Roboto",
+      },
     },
   },
   plugins: [],

@@ -1,10 +1,12 @@
 // import React from "react";
 // import { Routes, Route } from "react-router-dom";
-import Button from "./components/Button";
+import Navbar from "./components/Navbar";
+import { Home } from "./roots/pages";
 const App = () => {
   return (
     <div>
-      <Button />
+      <Navbar />
+      <Home />
     </div>
   );
 };
