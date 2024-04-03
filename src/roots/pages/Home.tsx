@@ -2,6 +2,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { about_img } from "../../assets/images";
 import { LuMoveRight } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
+import { supports } from "../../contants";
 const Home = () => {
   return (
     <div>
@@ -103,6 +104,33 @@ const Home = () => {
               <LuMoveRight color="white" />
             </button>
           </div>
+        </div>
+      </section>
+      <section className="bg-[#DBF4F9] w-full min-h-[922px] flex items-center justify-center">
+        <div className="flex justify-center items-center gap-[32px] py-[120px]">
+          {supports.map((support) => (
+            <>
+              <div className="max-w-[440px]">
+                <div className="p-[32px] flex justify-center items-center mb-[32px]">
+                  <div className="bg-white p-[46px] rounded-xl">
+                    <img
+                      src={support.imgURL}
+                      alt="image"
+                      width={80}
+                      height={76}
+                    />
+                  </div>
+                </div>
+                <h2 className="font-roboto font-medium text-[32px] text-center leading-[100%] mb-[18px]">
+                  {support.title}
+                </h2>
+                <p className="font-arial font-normal text-[24px] text-[#717171] text-center leading-[160%]">
+                  {" "}
+                  {support.descriptions}
+                </p>
+              </div>
+            </>
+          ))}
         </div>
       </section>
     </div>

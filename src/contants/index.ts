@@ -38,7 +38,7 @@ export const navlinks = [
   },
 ];
 
-export const support = [
+export const supports = [
   {
     imgURL: feature_icon1,
     title: "Customer Delight",
