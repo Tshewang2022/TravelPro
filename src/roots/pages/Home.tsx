@@ -2,7 +2,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { about_img } from "../../assets/images";
 import { LuMoveRight } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
-import { supports } from "../../contants";
+import { packages, supports } from "../../contants";
 const Home = () => {
   return (
     <div>
@@ -134,10 +134,63 @@ const Home = () => {
         </div>
       </section>
       {/* === packages section === */}
+      <section className="py-[220px]">
+        <h2 className="font-roboto font-normal text-[46px] text-center text-[#2ec4e1] leading-normal">
+          CHOOSE YOUR PACKAGES
+        </h2>
+        <h1 className="font-roboto font-medium text-[76px] text-center leading-normal">
+          Popular Tours Packages
+        </h1>
+        <div className="flex justify-center md:flex-wrap gap-[32px] mt-[64px]">
+          {packages.map((pack) => (
+            <div
+              style={{ backgroundImage: `url(${pack.imgURL})` }}
+              className="flex items-end justify-center min-h-[640px] min-w-[420px] bg-no-repeat bg-cover rounded-md"
+            >
+              <div className="px-[32px] pb-[56px]">
+                <div className="flex gap-[16px] justify-start items-center">
+                  <p className="font-arial font-medium text-white text-[20px]">
+                    {pack.location}
+                  </p>
+                  <p className="font-arial font-medium text-white text-[20px]">
+                    {pack.days}
+                  </p>
+                </div>
+                <p className="font-arial font-medium text-white text-[20px] mb-[16px]">
+                  {pack.rating}
+                </p>
+                <h4 className="font-arial font-medium text-white text-[32px] mb-[16px]">
+                  {pack.title}
+                </h4>
+                <div className="flex justify-start items-center gap-[16px]">
+                  <button className="py-[16px] px-[32px] bg-[#4ED0D0] text-white font-semibold text-[24px] rounded-md">
+                    Book Now
+                  </button>
+
+                  <h4 className="font-roboto font-bold text-white text-[32px]">
+                    {pack.price}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* === travel point === */}
       <section>
-        <h2 className="font-roboto font-normal">CHOOSE YOUR PACKAGES</h2>
-        <h1>Popular Tours Packages</h1>
-        <div>this is the div</div>
+        <div className="flex justify-center items-center gap-[32px]">
+          <div>img</div>
+          <div>
+            <h4>TRAVEL POINT</h4>
+            <h1>Discover The World With Our Guide</h1>
+            <p>
+              Contray to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature form 45BC
+            </p>
+            <div>mapping</div>
+          </div>
+        </div>
       </section>
     </div>
   );
