@@ -107,7 +107,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-[#DBF4F9] w-full min-h-[922px] flex items-center justify-center">
-        <div className="flex justify-center items-center gap-[32px] py-[120px]">
+        <div className="flex justify-center items-center gap-[32px]">
           {supports.map((support) => (
             <>
               <div className="max-w-[440px]">
@@ -132,6 +132,12 @@ const Home = () => {
             </>
           ))}
         </div>
+      </section>
+      {/* === packages section === */}
+      <section>
+        <h2 className="font-roboto font-normal">CHOOSE YOUR PACKAGES</h2>
+        <h1>Popular Tours Packages</h1>
+        <div>this is the div</div>
       </section>
     </div>
   );
