@@ -181,10 +181,15 @@ const Home = () => {
       <section>
         <div className="flex justify-center items-center gap-[32px]">
           <div>img</div>
-          <div>
-            <h4>TRAVEL POINT</h4>
-            <h1>Discover The World With Our Guide</h1>
-            <p>
+          <div className="max-w-[768px]">
+            <h4 className="font-roboto font-medium text-[32px] text-[#4ED0D0]">
+              TRAVEL POINT
+            </h4>
+            <h1 className="font-roboto font-semibold text-[76px] leading-[120%]">
+              Discover The World
+              <br /> With Our Guide
+            </h1>
+            <p className="font-arial font-normal text-[#717171] text-[20px] leading-[160%]">
               Contray to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature form 45BC
             </p>
