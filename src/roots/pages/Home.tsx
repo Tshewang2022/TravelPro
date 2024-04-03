@@ -1,5 +1,7 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { about_img } from "../../assets/images";
+import { LuMoveRight } from "react-icons/lu";
+import { TiTick } from "react-icons/ti";
 const Home = () => {
   return (
     <div>
@@ -42,42 +44,63 @@ const Home = () => {
       </section>
 
       {/* === about-us section === */}
-      <section className="flex justify-center items-top min-h-[980px] py-[128px] px-[64px] gap-[64px]">
-        <div className="flex justify-center items-top h-[1080px] w-[640px]">
-          <img src={about_img} alt="" />
+      <section className="flex justify-center items-top min-h-[1020px] py-[128px] px-[64px] gap-[64px] ">
+        <div className="flex justify-center items-top h-[1020px] w-[640px]">
+          <img src={about_img} alt="about_us" />
         </div>
         <div className="flex justify-center items-top">
           <div>
-            <h2 className="font-roboto font-normal text-[#4ED0D0] text-[40px] leading-[120%]">
+            <h2 className="font-roboto font-normal text-[#4ED0D0] text-[40px] leading-[120%] mb-[32px]">
               About Us
             </h2>
             <h1 className="font-roboto font-medium text-black text-[76px] leading-[120%] max-w-[640px]">
               We are Professional Planners For your
             </h1>
-            <p className="font-arial font-normal pl-[64px] text-[24px] leading-[150%] max-w-[768px] mt-[40px] text-[#717171]">
+            <p className="font-arial font-normal pl-[64px] text-[24px] leading-[150%] max-w-[768px] mt-[40px] text-[#717171] ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
               maiores, ex laboriosam porro id quibusdam iure nulla aut
               perspiciatis earum.
             </p>
-            <h6 className="font-arial font-semibold text-[24px] pl-[64px] text-[#4ED0D0] mt-[32px] max-w-[768px]">
+            <h6 className="font-arial font-semibold text-[24px] pl-[64px] text-[#4ED0D0] mt-[32px] max-w-[768px] mb-[64px]">
               Speak to our Destination Experts as Direct Call +15417729038
             </h6>
-            <h6 className="font-arial font-normal text-[#535151] text-[24px] mt-[32px]">
-              All places and activites are carefully picked by us
-            </h6>
-            <h6 className="font-arial font-normal text-[#535151] text-[24px] mt-[16px]">
-              98% Course Completitation Rates
-            </h6>
-            <h6 className="font-arial font-normal text-[#535151] text-[24px] mt-[16px]">
-              We are an award winning agency
-            </h6>
-            <h6 className="font-arial font-normal text-[#535151] text-[24px] mt-[16px] mb-[32px] ">
-              Trusted by mre than 80,000 customers
-            </h6>
-            <button className="px-[32px] py-[16px] bg-[#4ED0D0]  rounded-md">
+            <div className="flex justify-start items-start gap-[16px] my-[32px]">
+              <div className="p-[8px] bg-[#4ED0D0] rounded-full">
+                <TiTick className="w-[24px] h-[24px]" color="white" />
+              </div>
+              <h6 className="font-arial font-normal text-[#535151] text-[24px]">
+                All places and activites are carefully picked by us
+              </h6>
+            </div>
+            <div className="flex justify-start items-start gap-[16px] my-[32px]">
+              <div className="p-[8px] bg-[#4ED0D0] rounded-full">
+                <TiTick className="w-[24px] h-[24px]" color="white" />
+              </div>
+              <h6 className="font-arial font-normal text-[#535151] text-[24px] ">
+                All places and activites are carefully picked by us
+              </h6>
+            </div>
+            <div className="flex justify-start items-start gap-[16px] my-[32px]">
+              <div className="p-[8px] bg-[#4ED0D0] rounded-full">
+                <TiTick className="w-[24px] h-[24px]" color="white" />
+              </div>
+              <h6 className="font-arial font-normal text-[#535151] text-[24px] ">
+                All places and activites are carefully picked by us
+              </h6>
+            </div>
+            <div className="flex justify-start items-start gap-[16px] mt-[32px] mb-[120px] ">
+              <div className="p-[8px] bg-[#4ED0D0] rounded-full">
+                <TiTick className="w-[24px] h-[24px]" color="white" />
+              </div>
+              <h6 className="font-arial font-normal text-[#535151] text-[24px] ">
+                All places and activites are carefully picked by us
+              </h6>
+            </div>
+            <button className="flex justify-start items-center gap-[16px] px-[32px] py-[24px] bg-[#4ED0D0]  rounded-md ">
               <p className="font-arial font-medium text-white text-[24px] items-center">
                 Read More
               </p>
+              <LuMoveRight color="white" />
             </button>
           </div>
         </div>
