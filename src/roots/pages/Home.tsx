@@ -1,8 +1,9 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { about_img } from "../../assets/images";
+import { about_img, funfacts } from "../../assets/images";
 import { LuMoveRight } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
-import { packages, supports } from "../../contants";
+import { FaStar } from "react-icons/fa";
+import { destinations, guides, packages, supports } from "../../contants";
 const Home = () => {
   return (
     <div>
@@ -178,10 +179,12 @@ const Home = () => {
       </section>
 
       {/* === travel point === */}
-      <section>
-        <div className="flex justify-center items-center gap-[32px]">
-          <div>img</div>
-          <div className="max-w-[768px]">
+      <section className="pb-[120px]">
+        <div className="flex justify-center items-start gap-[32px]">
+          <div className="flex justify-center items-center w-1/2 ">
+            <img src={funfacts} alt="facts" className="w-[678px]" />
+          </div>
+          <div className="w-1/2">
             <h4 className="font-roboto font-medium text-[32px] text-[#4ED0D0]">
               TRAVEL POINT
             </h4>
@@ -189,11 +192,99 @@ const Home = () => {
               Discover The World
               <br /> With Our Guide
             </h1>
-            <p className="font-arial font-normal text-[#717171] text-[20px] leading-[160%]">
+            <p className="font-arial font-normal text-[#717171] text-[20px] leading-[160%] mb-[96px] mt-[32px] max-w-[768px]">
               Contray to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature form 45BC
             </p>
-            <div>mapping</div>
+            <div className="flex gap-[32px] flex-wrap md:flex-1">
+              {guides.map((guide) => (
+                <div className="border border-[#3ed0d0] flex justify-center items-center  rounded-md  w-[350px] h-[250px]">
+                  <div>
+                    <h2 className="font-roboto font-semibold text-center text-[#3ed0d0] text-[56px]">
+                      {guide.count}
+                    </h2>
+                    <h3 className="font-arial font-medium text-center text-[#717171] text-[26px]">
+                      {guide.guide}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* === destinations === */}
+      <section className="py-[120px]">
+        <h2 className="font-arial font-medium text-center text-[#3ed0d0] text-[40px]">
+          POPULAR DESTINATION
+        </h2>
+        <h2 className="font-roboto font-medium text-center text-[76px] mb-[64px]">
+          Popular Destinations
+        </h2>
+
+        <div className="flex justify-center flex-wrap gap-[32px]">
+          {destinations.map((destination) => (
+            <div
+              className="rounded-xl h-[640px] w-[520px] bg-no-repeat bg-cover flex items-end justify-start px-[64px] pb-[76px]"
+              style={{ backgroundImage: `url(${destination.imgURL})` }}
+            >
+              <div>
+                <h2 className="font-roboto font-medium text-white text-[46px] leading-[120%] mb-[12px]">
+                  {destination.title}
+                </h2>
+                <div className="flex justify-start items-center gap-[16px]">
+                  <h4 className="font-arial font-semibold text-white text-[24px]">
+                    {destination.trip}
+                  </h4>
+                  <h4 className="font-arial font-semibold text-white text-[24px]">
+                    {destination.location}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* === experience ===*/}
+      <section className="bg-gray-300">
+        <div className="flex justify-center items-center gap-[32px]">
+          <div>ime</div>
+          <div className="max-w-[678px]">
+            <h1 className="font-roboto font-semibold text-white text-[76px] leading-[120%]">
+              A Truly Wonderful <br /> Experience{" "}
+            </h1>
+            <p className="font-arial font-medium text-white text-[24px] mt-[64px] leading-[180%]">
+              Brilliant for anyone looking to get away from the hustel and
+              bustel of city or detox form their tech for few days. I could have
+              stayed another week
+            </p>
+            <p className="font-roboto font-medium text-white text-[24px] mt-[64px] leading-[180%]">
+              They really have thought about everthing here down to the finest
+              details
+            </p>
+
+            <div className="flex justify-start items-center gap-[4px] mt-[64px]">
+              <div className="bg-green-400 rounded-sm p-[8px]">
+                <FaStar color="white" />
+              </div>
+              <div className="bg-green-400 rounded-sm p-[8px]">
+                <FaStar color="white" />
+              </div>
+              <div className="bg-green-400 rounded-sm p-[8px]">
+                <FaStar color="white" />
+              </div>
+              <div className="bg-green-400 rounded-sm p-[8px]">
+                <FaStar color="white" />
+              </div>
+              <div className="bg-green-400 rounded-sm p-[8px]">
+                <FaStar color="white" />
+              </div>
+              <h5 className="font-arial font-semibold text-white text-[24px] ml-[16px]">
+                01 Jan 2025
+              </h5>
+            </div>
           </div>
         </div>
       </section>
