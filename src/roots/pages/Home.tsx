@@ -10,6 +10,7 @@ import {
   packages,
   supports,
 } from "../../contants";
+import { travel_video } from "../../assets/videos";
 const Home = () => {
   return (
     <div>
@@ -334,6 +335,24 @@ const Home = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* === new video section, will be the new experience for me === */}
+      <section>
+        <div className="flex justify-center rounded-[20px] px-[32px]">
+          <video
+            controls
+            src={travel_video}
+            autoPlay
+            loop
+            typeof="video/mp4"
+            muted
+            className="rounded-xl"
+          >
+            <p className="bg-red-400 z-10">this is the content</p>
+          </video>
+        </div>
+        this
       </section>
     </div>
   );
