@@ -1,9 +1,15 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { about_img, funfacts } from "../../assets/images";
+import { about_img, funfacts, wonderful } from "../../assets/images";
 import { LuMoveRight } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
 import { FaStar } from "react-icons/fa";
-import { destinations, guides, packages, supports } from "../../contants";
+import {
+  destinations,
+  getStarted,
+  guides,
+  packages,
+  supports,
+} from "../../contants";
 const Home = () => {
   return (
     <div>
@@ -249,18 +255,23 @@ const Home = () => {
 
       {/* === experience ===*/}
       <section className="bg-gray-300">
-        <div className="flex justify-center items-center gap-[32px]">
-          <div>ime</div>
+        <div
+          className="flex justify-center items-center gap-[32px] bg-cover bg-no-repeat py-[120px]"
+          style={{ backgroundImage: `url(${wonderful})` }}
+        >
+          {/* <div className="w-1/2"> */}
+          {/* <img src={wonderful} alt="wonderful" className="w-[768px]" /> */}
+          {/* </div> */}
           <div className="max-w-[678px]">
-            <h1 className="font-roboto font-semibold text-white text-[76px] leading-[120%]">
+            <h1 className="font-roboto font-semibold text-black text-[76px] leading-[120%]">
               A Truly Wonderful <br /> Experience{" "}
             </h1>
-            <p className="font-arial font-medium text-white text-[24px] mt-[64px] leading-[180%]">
+            <p className="font-arial font-medium text-black text-[24px] mt-[64px] leading-[180%]">
               Brilliant for anyone looking to get away from the hustel and
               bustel of city or detox form their tech for few days. I could have
               stayed another week
             </p>
-            <p className="font-roboto font-medium text-white text-[24px] mt-[64px] leading-[180%]">
+            <p className="font-arial font-medium text-black text-[24px] mt-[64px] leading-[180%]">
               They really have thought about everthing here down to the finest
               details
             </p>
@@ -285,6 +296,42 @@ const Home = () => {
                 01 Jan 2025
               </h5>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-[120px]">
+        <h2 className="font-arial font-nomral text-center text-[#3ed0d0] text-[46px] leading-normal">
+          HOW IT WORKS
+        </h2>
+        <h1 className="font-roboto font-medium text-center text-black text-[76px]">
+          Getting Started? It's Simple
+        </h1>
+        <div className="flex justify-center items-center mt-[64px]">
+          <div className=" flex justify-center items-center">
+            {getStarted.map((started) => (
+              <div className="xl:px-[64px] md:px-[32px]">
+                <div className="flex justify-center items-center border-2 border-dashed border-[#3ed0d0] w-[440px] h-[440px] relative rounded-full mb-[64px] ">
+                  <div className="flex justify-center items-center bg-[#3ed0d0] z-100 absolute  right-0 top-0 w-[120px] h-[120px] rounded-full">
+                    <h2 className="font-roboto font-medium text-[46px] text-center p-[16px] text-white">
+                      {started.no}
+                    </h2>
+                  </div>
+                  <img
+                    src={started.imgURL}
+                    alt="started"
+                    className="w-[332px] h-[332px]"
+                  />
+                  {/* <h2>{started.title}</h2> */}
+                  {/* <p>{started.description}</p> */}
+                </div>
+                <h2 className="font-roboto font-medium text-center text-black text-[46px] leading-[120%] mb-[32px]">
+                  {started.title}
+                </h2>
+                <p className="font-arial font-normal text-[#717171] text-[20px] leading-[150%] text-center max-w-[450px]">
+                  {started.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
