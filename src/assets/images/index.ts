@@ -19,3 +19,5 @@ export { default as post2 } from "./post_2.jpeg";
 export { default as about_img } from "./about_img.webp";
 export { default as funfacts } from "./funfact_img.webp";
 export { default as wonderful } from "./wonderfull.jpg";
+export {default as avatar_1} from './avatar_1.png'
+export {default as avatar_2} from './avatar_2.png'

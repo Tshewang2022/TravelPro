@@ -4,6 +4,7 @@ import { LuMoveRight } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
 import { FaStar } from "react-icons/fa";
 import {
+  deals,
   destinations,
   getStarted,
   guides,
@@ -353,6 +354,49 @@ const Home = () => {
           </video>
         </div>
         this
+      </section>
+      {/* === blog === */}
+      <section className="bg-[#fdfdf py-[120px] bg-[#f7f7f7]">
+        <h2 className="font-roboto font-normal text-[46px] text-[#3ed0d0] leading-normal text-center">
+          NEWS & BLOGS
+        </h2>
+        <h1 className="font-roboto font-semibold text-black text-[76px] leading-[140%] text-center">
+          Last Minute Amazing Deals
+        </h1>
+        <div className="flex justify-center items-center shadow-xl">
+          <div className="max-w-[1920px] flex justify-center items-center gap-[32px]">
+            {deals.map((deal) => (
+              <div className="flex justify-center items-start max-md:flex-wrap">
+                <div>
+                  <img src={deal.imgURL} alt="blog" />
+                </div>
+                <div className="bg-white px-[32px] py-[30px]">
+                  <div className="flex justify-start items-center  gap-[16px] my-[16px]">
+                    <img src={deal.profileImg} alt="profile" />
+                    <h6 className="font-arial font-normal text-[#717171] text-[20px]">
+                      {deal.name}
+                    </h6>
+                  </div>
+                  <h2 className="font-roboto font-semibold text-black text-[32px] leading-[120%] mb-[32px] ">
+                    {deal.title}
+                  </h2>
+                  <p className="font-arial font-normla text-[#717171] text-[16px] leading-[160%] mb-[64px]">
+                    {" "}
+                    {deal.description}
+                  </p>
+                  <div className="flex justify-start items-center gap-[32px] bg-[#f8f8f8]">
+                    <button className="font-arial font-normal  text-[20px] py-[16px] px-[32px]">
+                      Comments
+                    </button>
+                    <button className="bg-[#102039] font-arial font-normal text-white text-[20px] text-center py-[16px] px-[32px]">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
     </div>
   );

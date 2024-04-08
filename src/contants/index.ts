@@ -4,7 +4,7 @@ import {
   feature_icon3,
   feature_icon4,
 } from "../assets/icons";
-import { packages1, packages2 } from "../assets/images";
+import { avatar_1, avatar_2, packages1, packages2 } from "../assets/images";
 import {
   destination1,
   destination2,
@@ -179,7 +179,7 @@ export const getStarted = [
 export const deals = [
   {
     imgURL: post1,
-    profileImg: "",
+    profileImg: avatar_1,
     name: "By Admin",
     title: "Useful VS Code Esion Front-End Development",
     description:
@@ -187,7 +187,7 @@ export const deals = [
   },
   {
     imgURL: post2,
-    profileImg: "",
+    profileImg: avatar_2,
     name: "By Admin",
     title: "Useful VS Code Esion Front-End Development",
     description:
