@@ -1,11 +1,12 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { about_img, funfacts, wonderful } from "../../assets/images";
+import { about_img, footer, funfacts, wonderful } from "../../assets/images";
 import { LuMoveRight } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
 import { FaStar } from "react-icons/fa";
 import {
   deals,
   destinations,
+  footerlinks,
   getStarted,
   guides,
   packages,
@@ -395,6 +396,40 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === footerlink === */}
+      <section>
+        <div
+          className="min-h-screen bg-cover bg-no-repeat flex justify-center items-center"
+          style={{ backgroundImage: `url(${footer})` }}
+        >
+          <div className="flex justify-center  items-center">
+            <div className="flex justify-between items-center w-[1440px]">
+              {footerlinks.map((link) => (
+                <div className="flex justify-between items-center">
+                  <div>
+                    <h2 className="font-roboto font-semibold text-[36px] text-white">
+                      {link.title}
+                    </h2>
+                    <div className="flex justify-between items-center gap-[32px]">
+                      <h2 className="font-roboto font-normal text-white text-[24px] leading-normal ">
+                        {link.routes1.map((route1) => (
+                          <h1 className="my-[32px]">{route1.link}</h1>
+                        ))}
+                      </h2>
+                      <h2 className="font-roboto font-normal text-white text-[24px] leading-normal">
+                        {link.routes2.map((route2) => (
+                          <h1 className="my-[32px]">{route2.link}</h1>
+                        ))}
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
