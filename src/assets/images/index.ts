@@ -22,3 +22,7 @@ export { default as wonderful } from "./wonderfull.jpg";
 export { default as avatar_1 } from "./avatar_1.png";
 export { default as avatar_2 } from "./avatar_2.png";
 export { default as footer } from "./footer.jpg";
+export { default as aboutus_bg } from "./aboutus_bg.jpg";
+export { default as offertext } from "./offer_text.png";
+export { default as travel } from "./travel.jpg";
+export {default as about_4} from './about_4.webp'
