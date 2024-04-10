@@ -7,7 +7,18 @@ import {
   travel,
 } from "../../assets/images";
 import { LuMoveUpRight } from "react-icons/lu";
-import { FaToolbox, FaHotel, FaCompass, FaMicrophone } from "react-icons/fa";
+import {
+  FaToolbox,
+  FaHotel,
+  FaCompass,
+  FaMicrophone,
+  FaLinkedin,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
+import { teamMembers } from "../../contants";
+import { travel_video } from "../../assets/videos";
 const AboutUs = () => {
   return (
     // this is the hero section
@@ -176,7 +187,7 @@ const AboutUs = () => {
                 <div className="mb-[64px]">
                   <div className="flex justify-start">
                     <div className="flex justify-center items-center rounded-full p-[30px] border-2 border-gray-500">
-                      <FaToolbox
+                      <FaCompass
                         color="#3fd0d0"
                         className="w-[40px] h-[40px]"
                       />
@@ -193,7 +204,10 @@ const AboutUs = () => {
                 <div className="mb-[64px]">
                   <div className="flex justify-start">
                     <div className="flex justify-center items-center rounded-full p-[30px] border-2 border-gray-500">
-                      <FaHotel color="#3fd0d0" className="w-[40px] h-[40px]" />
+                      <FaMicrophone
+                        color="#3fd0d0"
+                        className="w-[40px] h-[40px]"
+                      />
                     </div>
                   </div>
                   <h4 className="font-roboto font-medium text-black text-[36px] leading-normal my-[16px]">
@@ -207,6 +221,68 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* === travel agent === */}
+      <section className="bg-[#ECFEFF] py-[140px]">
+        <h6 className="font-roboto font-medium text-[#3ed0f0] text-center text-[46px]">
+          TRAVEL AGENTS
+        </h6>
+        <h4 className="font-roboto font-semibold text-black text-[76px] text-center leading-[130%] mb-[64px]">
+          Our Experts Team Member
+        </h4>
+        <div className="flex md:flex-wrap justify-center items-center gap-[32px]">
+          {teamMembers.map((team) => (
+            <div
+              className="flex justify-center items-center w-[500px] h-[500px] rounded-full  bg-cover bg-no-repeat bg-center"
+              style={{ backgroundImage: `url(${team.imgURL})` }}
+            >
+              <div className="">
+                <h2 className="font-roboto font-semibold text-white text-[32px] text-center">
+                  {team.name}
+                </h2>
+                <h2 className="font-arial font-normal text-white text-center text-[24px]">
+                  {team.designations}
+                </h2>
+
+                <div className="flex justify-center items-center gap-[8px] mt-[32px]">
+                  <div className="rounded-full p-[12px] border-2 border-white">
+                    <FaFacebookF className="w-[24px] h-[24px]" color="white" />
+                  </div>
+                  <div className="rounded-full p-[12px] border-2 border-white">
+                    <FaTwitter className="w-[24px] h-[24px]" color="white" />
+                  </div>
+                  <div className="rounded-full p-[12px] border-2 border-white">
+                    <FaInstagram className="w-[24px] h-[24px]" color="white" />
+                  </div>
+                  <div className="rounded-full p-[12px] border-2 border-white">
+                    <FaLinkedin className="w-[24px] h-[24px]" color="white" />
+                  </div>
+                </div>
+                {/* <div className="flex justify-center items-center gap-[16px] mt-[32px]">
+                  {team.iconimg.map((icon) => (
+                    <div className="rounded-full p-[16px] border-2 border-white  ">
+                      <FaLinkedin />
+                    </div>
+                  ))}
+                </div> */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="py-[120px]">
+        <div className="flex justify-center rounded-[20px] px-[32px]">
+          <video
+            controls
+            src={travel_video}
+            autoPlay
+            loop
+            typeof="video/mp4"
+            muted
+            className="rounded-xl"
+          ></video>
         </div>
       </section>
     </section>

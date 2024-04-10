@@ -25,4 +25,7 @@ export { default as footer } from "./footer.jpg";
 export { default as aboutus_bg } from "./aboutus_bg.jpg";
 export { default as offertext } from "./offer_text.png";
 export { default as travel } from "./travel.jpg";
-export {default as about_4} from './about_4.webp'
+export { default as about_4 } from "./about_4.webp";
+export { default as team1 } from "./team1.jpg";
+export { default as team2 } from "./team2.jpg";
+export { default as team3 } from "./team3.jpg";

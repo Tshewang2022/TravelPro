@@ -12,9 +12,16 @@ import {
   destination4,
   destination5,
 } from "../assets/images";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 import { post1, post2 } from "../assets/images";
 import { getstart1, getstart2, getstart3 } from "../assets/images";
 import { tour1, tour2, tour3, tour4, tour5, tour6 } from "../assets/images";
+import { team1, team2, team3 } from "../assets/images";
 export const navlinks = [
   {
     title: "Home",
@@ -230,16 +237,37 @@ export const footerlinks = [
 
 export const teamMembers = [
   {
-    imgURL: "",
+    imgURL: team1,
     name: "David Cooper",
     designations: "CO FOUNDER",
-    icons_img: [{ icon1: "" }, { icon2: "" }, { icon3: "" }, { icon4: "" }],
+    iconimg: [
+      { icon: FaFacebookF },
+      { icon: FaTwitter },
+      { icon: FaInstagram },
+      { icon: FaLinkedin },
+    ],
   },
   {
-    imgURL: "",
+    imgURL: team2,
     name: "David Cooper",
     designations: "CO FOUNDER",
-    icons_img: [{ icon1: "" }, { icon2: "" }, { icon3: "" }, { icon4: "" }],
+    iconimg: [
+      { icon1: FaFacebookF },
+      { icon1: FaTwitter },
+      { icon1: FaInstagram },
+      { icon1: FaLinkedin },
+    ],
+  },
+  {
+    imgURL: team3,
+    name: "David Cooper",
+    designations: "CO FOUNDER",
+    iconimg: [
+      { icon: FaFacebookF },
+      { icon: FaTwitter },
+      { icon: FaInstagram },
+      { icon: FaLinkedin },
+    ],
   },
 ];
 
