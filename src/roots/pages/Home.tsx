@@ -9,6 +9,7 @@ import {
   footerlinks,
   getStarted,
   guides,
+  logos,
   packages,
   supports,
 } from "../../contants";
@@ -354,7 +355,13 @@ const Home = () => {
             <p className="bg-red-400 z-10">this is the content</p>
           </video>
         </div>
-        this
+        <div className="flex justify-center items-center pt-[120px]">
+          <div className="w-[1920px] flex justify-between items-center gap-[32px]">
+            {logos.map((logo) => (
+              <img src={logo.imglogo} alt="logos" className="h-[120px]" />
+            ))}
+          </div>
+        </div>
       </section>
       {/* === blog === */}
       <section className="bg-[#fdfdf py-[120px] bg-[#f7f7f7]">
@@ -399,8 +406,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-    
     </div>
   );
 };

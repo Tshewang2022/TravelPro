@@ -29,3 +29,4 @@ export { default as about_4 } from "./about_4.webp";
 export { default as team1 } from "./team1.jpg";
 export { default as team2 } from "./team2.jpg";
 export { default as team3 } from "./team3.jpg";
+export { default as bannerImg } from "./banneImg.jpeg";

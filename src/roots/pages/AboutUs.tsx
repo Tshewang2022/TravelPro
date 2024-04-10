@@ -17,7 +17,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-import { teamMembers } from "../../contants";
+import { logos, teamMembers } from "../../contants";
 import { travel_video } from "../../assets/videos";
 const AboutUs = () => {
   return (
@@ -273,7 +273,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="py-[120px]">
-        <div className="flex justify-center rounded-[20px] px-[32px]">
+        <div className="flex justify-center rounded-[40px] px-[32px]">
           <video
             controls
             src={travel_video}
@@ -281,8 +281,15 @@ const AboutUs = () => {
             loop
             typeof="video/mp4"
             muted
-            className="rounded-xl"
+            className="rounded-[40px]"
           ></video>
+        </div>
+        <div className="flex justify-center items-center pt-[120px]">
+          <div className="w-[1920px] flex justify-between items-center gap-[32px]">
+            {logos.map((logo) => (
+              <img src={logo.imglogo} alt="logos" className="h-[120px]" />
+            ))}
+          </div>
         </div>
       </section>
     </section>

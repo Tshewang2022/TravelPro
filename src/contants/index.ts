@@ -18,6 +18,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
+import { brand1, brand2, brand3, brand5 } from "../assets/icons";
 import { post1, post2 } from "../assets/images";
 import { getstart1, getstart2, getstart3 } from "../assets/images";
 import { tour1, tour2, tour3, tour4, tour5, tour6 } from "../assets/images";
@@ -314,4 +315,11 @@ export const tours = [
     locations: "Santorini, Greece",
     price: "$4500",
   },
+];
+
+export const logos = [
+  { imglogo: brand1 },
+  { imglogo: brand2 },
+  { imglogo: brand3 },
+  { imglogo: brand5 },
 ];

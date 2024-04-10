@@ -3,3 +3,7 @@ export { default as feature_icon2 } from "./feature_icon_2.svg";
 export { default as feature_icon3 } from "./feature_icon_3.svg";
 export { default as feature_icon4 } from "./feature_icon_4.svg";
 export { default as logo } from "./logo.svg";
+export { default as brand1 } from "./brand_1.svg";
+export { default as brand2 } from "./brand_2.svg";
+export { default as brand3 } from "./brand_4.svg";
+export { default as brand5 } from "./brand_5.svg";
