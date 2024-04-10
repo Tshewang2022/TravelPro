@@ -31,3 +31,6 @@ export { default as team2 } from "./team2.jpg";
 export { default as team3 } from "./team3.jpg";
 export { default as bannerImg } from "./banneImg.jpeg";
 export { default as tour } from "./tours.jpeg";
+export { default as blog1 } from "./blog1.jpeg";
+export { default as blog2 } from "./blog2.jpeg";
+export { default as blog3 } from "./blog3.jpg";

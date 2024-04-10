@@ -1,6 +1,5 @@
 import { tour } from "../../assets/images";
 import Button from "../../components/Button";
-
 import { tours } from "../../contants";
 import { FaGlobe } from "react-icons/fa";
 
@@ -29,7 +28,7 @@ const Tours = () => {
             {tours.map((tour) => (
               <div className="bg-white w-[540px]">
                 <div
-                  className="w-[500px] h-[600px] bg-cover bg-no-repeat p-[16px] "
+                  className="max-w-[500px] h-[600px] bg-cover bg-no-repeat p-[16px] "
                   style={{ backgroundImage: `url(${tour.imgURL})` }}
                 >
                   <div className="p-[32px] ]">
