@@ -264,6 +264,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      {/* ===completed the projects === */}
     </section>
   );
 };
