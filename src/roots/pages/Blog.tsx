@@ -265,6 +265,7 @@ const Blog = () => {
         </div>
       </section>
       {/* ===completed the projects === */}
+      {/* === if not now, when. Life will be rotting as the time pass by, wake up bro === */}
     </section>
   );
 };
